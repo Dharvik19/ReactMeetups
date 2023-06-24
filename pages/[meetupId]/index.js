@@ -30,7 +30,7 @@ function MeetupDetails() {
   return (
     <>
     {DUMMY_MEETUPS.filter((item)=>item.id ===id ).map((item)=>(
-      <MeetupDetail
+      <MeetupDetail key = {item.id}
       image={item.image}
       title={item.title}
       address={item.address}
